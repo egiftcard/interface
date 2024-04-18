@@ -62,6 +62,13 @@ export const USDC_POLYGON_MUMBAI = new Token(
   'USD Coin'
 )
 export const USDC_CELO = new Token(ChainId.CELO, '0xceba9300f2b948710d2653dd7b07f33a8b32118c', 6, 'USDC', 'USD Coin')
+export const USDC_CELO_ALFAJ0RES = new Token(
+  ChainId.CELO_ALFAJORES,
+  '0x2F25deB3848C207fc8E0c34035B3Ba7fC157602B',
+  6,
+  'USDC',
+  'USD Coin'
+)
 export const USDC_BASE = new Token(ChainId.BASE, '0x833589fcd6edb6e08f4c7c32d4f71b54bda02913', 6, 'USDC', 'USD Coin')
 
 export const DAI = new Token(ChainId.MAINNET, '0x6B175474E89094C44Da98b954EedeAC495271d0F', 18, 'DAI', 'Dai Stablecoin')
@@ -467,7 +474,9 @@ export function nativeOnChain(chainId: number): NativeCurrency | Token {
   return (cachedNativeCurrency[chainId] = nativeCurrency)
 }
 
-export const TOKEN_SHORTHANDS: { [shorthand: string]: { [chainId in ChainId]?: string } } = {
+export const TOKEN_SHORTHANDS: {
+  [shorthand: string]: { [chainId in ChainId]?: string }
+} = {
   USDC: {
     [ChainId.MAINNET]: USDC_MAINNET.address,
     [ChainId.ARBITRUM_ONE]: USDC_ARBITRUM.address,
@@ -479,7 +488,7 @@ export const TOKEN_SHORTHANDS: { [shorthand: string]: { [chainId in ChainId]?: s
     [ChainId.BNB]: USDC_BSC.address,
     [ChainId.BASE]: USDC_BASE.address,
     [ChainId.CELO]: USDC_CELO.address,
-    [ChainId.CELO_ALFAJORES]: USDC_CELO.address,
+    [ChainId.CELO_ALFAJORES]: USDC_CELO_ALFAJ0RES.address,
     [ChainId.GOERLI]: USDC_GOERLI.address,
     [ChainId.SEPOLIA]: USDC_SEPOLIA.address,
     [ChainId.AVALANCHE]: USDC_AVALANCHE.address,
