@@ -6047,10 +6047,15 @@
     react "^18.2.0"
     react-dom "^18.2.0"
 
-"@uniswap/default-token-list@^11.2.0", "@uniswap/default-token-list@^11.8.0":
+"@uniswap/default-token-list@^11.2.0":
   version "11.8.0"
   resolved "https://registry.yarnpkg.com/@uniswap/default-token-list/-/default-token-list-11.8.0.tgz#a430e709a450469fb811f5b4984c00321b82e12c"
   integrity sha512-2U0sRaxrEZCyAr0e2pRueESJDtLl2oR7Zu7GeIaqqN6ocs7Ew2pncnrnrdFvMLSElVNbDS0PyCSPCeE6cj6mwg==
+
+"@uniswap/default-token-list@^12.3.0":
+  version "12.3.0"
+  resolved "https://registry.yarnpkg.com/@uniswap/default-token-list/-/default-token-list-12.3.0.tgz#3ab27470eb582b7c8e5951a5a55796b14d9b093f"
+  integrity sha512-BV+gHJs6uw9h8rS7hTgj/oN2QKdTRLhqWde7obbAzVLnb8oayeROr0Td9QkkOqzlBJdJb9klXrN1UgRDTd7Ngg==
 
 "@uniswap/eslint-config@^1.2.0":
   version "1.2.0"
